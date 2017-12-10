@@ -1,0 +1,10 @@
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\bin\Debug\hwCORE.exe.config
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\bin\Debug\hwCORE.exe
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\bin\Debug\hwCORE.pdb
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.MainView.resources
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.Properties.Resources.resources
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.csproj.GenerateResource.Cache
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.csproj.CoreCompileInputs.cache
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.exe
+C:\Users\Radek\Desktop\Moje programy\C#\Projekty\hwCORE\hwCORE\hwCORE\obj\Debug\hwCORE.pdb
