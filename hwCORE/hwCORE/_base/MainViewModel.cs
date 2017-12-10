@@ -33,8 +33,8 @@ namespace hwCORE.model {
             string osDetails = String.Empty;
             var details = new ManagementObjectSearcher("Select * FROM Win32_OperatingSystem").Get();
             foreach (var item in details) {
-                osDetails = Convert.ToString(item["Name"]);
-                osDetails += " Service Pack " + Convert.ToString(item["ServicePackMajorVersion"]);
+                osDetails = Convert.ToString(item["Caption"]);
+                osDetails += "Service Pack " + Convert.ToString(item["ServicePackMajorVersion"]);
             }
 
             return osDetails;
