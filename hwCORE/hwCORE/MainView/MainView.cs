@@ -24,6 +24,7 @@ namespace hwCORE {
             cpuTextBox.Text = _model.getCPUdetails();
             osTextBox.Text = _model.getOSdetails();
             gpuTextBox.Text = _model.getGpuDetails();
+            hddTextBox.Text = _model.getHddDetails();
         }
     }
 }
