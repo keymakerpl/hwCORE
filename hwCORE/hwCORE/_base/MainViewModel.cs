@@ -15,7 +15,7 @@ namespace hwCORE.model {
         public string getCPUdetails() {
 
             string cpuDetails = String.Empty;
-            var details = new ManagementObjectSearcher("Select * FROM Win32_Processor").Get();
+            var details = new ManagementObjectSearcher("SELECT * FROM Win32_Processor").Get();
             foreach (var item in details) {
                 cpuDetails = Convert.ToString(item["Name"]);
                 cpuDetails += " " + Convert.ToString(item["Description"]);
@@ -31,13 +31,26 @@ namespace hwCORE.model {
         public string getOSdetails() {
 
             string osDetails = String.Empty;
-            var details = new ManagementObjectSearcher("Select * FROM Win32_OperatingSystem").Get();
+            var details = new ManagementObjectSearcher("SELECT * FROM Win32_OperatingSystem").Get();
             foreach (var item in details) {
                 osDetails = Convert.ToString(item["Caption"]);
                 osDetails += "Service Pack " + Convert.ToString(item["ServicePackMajorVersion"]);
             }
 
             return osDetails;
+        }
+
+        public string getGpuDetails() {
+
+            string gpuDetails = String.Empty;
+
+            var details = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController").Get();
+            foreach (var item in details) {
+                gpuDetails = Convert.ToString(item["Caption"]);
+                gpuDetails += " " + Convert.ToString(item["Description"]);
+            }
+
+            return gpuDetails;
         }
     }
 }
