@@ -47,10 +47,25 @@ namespace hwCORE.model {
             var details = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController").Get();
             foreach (var item in details) {
                 gpuDetails = Convert.ToString(item["Caption"]);
-                gpuDetails += " " + Convert.ToString(item["Description"]);
+                //gpuDetails += " " + Convert.ToString(item["Description"]);
             }
 
             return gpuDetails;
         }
+
+        public string getHddDetails() {
+
+            string hddDetails = String.Empty;
+
+            var details = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive").Get();
+            foreach (var item in details) {
+                hddDetails = Convert.ToString(item["Caption"]);
+                //hddDetails += " " + Convert.ToString(item["Description"]);
+            }
+
+            return hddDetails;
+
+        }
+
     }
 }
