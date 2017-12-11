@@ -27,14 +27,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.hddTextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.gpuTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.osTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cpuTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.hddTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.memTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +70,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.memTextBox);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.hddTextBox);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.gpuTextBox);
@@ -83,12 +87,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Info";
             // 
+            // hddTextBox
+            // 
+            this.hddTextBox.Location = new System.Drawing.Point(54, 114);
+            this.hddTextBox.Name = "hddTextBox";
+            this.hddTextBox.ReadOnly = true;
+            this.hddTextBox.Size = new System.Drawing.Size(423, 20);
+            this.hddTextBox.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 117);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "HDD";
+            // 
             // gpuTextBox
             // 
-            this.gpuTextBox.Location = new System.Drawing.Point(41, 89);
+            this.gpuTextBox.Location = new System.Drawing.Point(54, 89);
             this.gpuTextBox.Name = "gpuTextBox";
             this.gpuTextBox.ReadOnly = true;
-            this.gpuTextBox.Size = new System.Drawing.Size(436, 20);
+            this.gpuTextBox.Size = new System.Drawing.Size(423, 20);
             this.gpuTextBox.TabIndex = 5;
             // 
             // label3
@@ -102,10 +123,10 @@
             // 
             // osTextBox
             // 
-            this.osTextBox.Location = new System.Drawing.Point(41, 63);
+            this.osTextBox.Location = new System.Drawing.Point(54, 63);
             this.osTextBox.Name = "osTextBox";
             this.osTextBox.ReadOnly = true;
-            this.osTextBox.Size = new System.Drawing.Size(436, 20);
+            this.osTextBox.Size = new System.Drawing.Size(423, 20);
             this.osTextBox.TabIndex = 3;
             // 
             // label2
@@ -119,10 +140,10 @@
             // 
             // cpuTextBox
             // 
-            this.cpuTextBox.Location = new System.Drawing.Point(41, 32);
+            this.cpuTextBox.Location = new System.Drawing.Point(54, 32);
             this.cpuTextBox.Name = "cpuTextBox";
             this.cpuTextBox.ReadOnly = true;
-            this.cpuTextBox.Size = new System.Drawing.Size(436, 20);
+            this.cpuTextBox.Size = new System.Drawing.Size(423, 20);
             this.cpuTextBox.TabIndex = 1;
             // 
             // label1
@@ -134,22 +155,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CPU";
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 117);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "HDD";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Memory";
             // 
-            // hddTextBox
+            // memTextBox
             // 
-            this.hddTextBox.Location = new System.Drawing.Point(41, 114);
-            this.hddTextBox.Name = "hddTextBox";
-            this.hddTextBox.ReadOnly = true;
-            this.hddTextBox.Size = new System.Drawing.Size(436, 20);
-            this.hddTextBox.TabIndex = 7;
+            this.memTextBox.Location = new System.Drawing.Point(54, 140);
+            this.memTextBox.Name = "memTextBox";
+            this.memTextBox.ReadOnly = true;
+            this.memTextBox.Size = new System.Drawing.Size(423, 20);
+            this.memTextBox.TabIndex = 9;
             // 
             // MainView
             // 
@@ -182,6 +203,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox hddTextBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox memTextBox;
+        private System.Windows.Forms.Label label5;
     }
 }
 

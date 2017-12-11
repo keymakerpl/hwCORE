@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Management;
+using System.Windows.Forms;
 
 namespace hwCORE.model {
     class MainViewModel {
@@ -65,6 +66,34 @@ namespace hwCORE.model {
 
             return hddDetails;
 
+        }
+
+        public string getMemoryDetails() {
+
+            string memDetails = String.Empty;
+
+            try {
+
+                var details = new ManagementObjectSearcher("SELECT * FROM Win32_LogicalMemoryConfiguration").Get();
+                foreach (var item in details) {
+                    string result = Convert.ToString(item["TotalPhysicalMemory"]);
+
+                    memDetails = result;
+                }
+                
+
+                return memDetails;
+
+            }
+            catch (ManagementException ex) {
+
+                MessageBox.Show("Błąd! "+ex);
+                Application.Exit();
+                throw;
+            }
+
+
+            
         }
 
     }
