@@ -27,10 +27,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.osTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.cpuTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.osTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gpuTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +66,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.gpuTextBox);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.osTextBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cpuTextBox);
@@ -74,6 +78,23 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Info";
+            // 
+            // osTextBox
+            // 
+            this.osTextBox.Location = new System.Drawing.Point(41, 63);
+            this.osTextBox.Name = "osTextBox";
+            this.osTextBox.ReadOnly = true;
+            this.osTextBox.Size = new System.Drawing.Size(436, 20);
+            this.osTextBox.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "OS";
             // 
             // cpuTextBox
             // 
@@ -92,22 +113,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CPU";
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "OS";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(5, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "GPU";
             // 
-            // osTextBox
+            // gpuTextBox
             // 
-            this.osTextBox.Location = new System.Drawing.Point(41, 63);
-            this.osTextBox.Name = "osTextBox";
-            this.osTextBox.ReadOnly = true;
-            this.osTextBox.Size = new System.Drawing.Size(436, 20);
-            this.osTextBox.TabIndex = 3;
+            this.gpuTextBox.Location = new System.Drawing.Point(41, 89);
+            this.gpuTextBox.Name = "gpuTextBox";
+            this.gpuTextBox.ReadOnly = true;
+            this.gpuTextBox.Size = new System.Drawing.Size(436, 20);
+            this.gpuTextBox.TabIndex = 5;
             // 
             // MainView
             // 
@@ -136,6 +157,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox osTextBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox gpuTextBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 
