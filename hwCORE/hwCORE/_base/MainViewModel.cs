@@ -108,10 +108,17 @@ namespace hwCORE.model {
 
             foreach (var item in details) {
                 mbDetails = Convert.ToString(item["Manufacturer"]);
-                
+                mbDetails += " " + Convert.ToString(item["Product"]);
+
             }
 
             return mbDetails;
+        }
+
+        public void copyToClipboardButton(string stringToCopy) {
+
+            Clipboard.SetText(stringToCopy);
+
         }
 
     }

@@ -29,5 +29,29 @@ namespace hwCORE {
             mbTextBox.Text = _model.getMotherboardDetails();
 
         }
+
+        private void button3_Click(object sender, EventArgs e) {
+            _model.copyToClipboardButton(cpuTextBox.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e) {
+            _model.copyToClipboardButton(osTextBox.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e) {
+            _model.copyToClipboardButton(gpuTextBox.Text);
+        }
+
+        private void button6_Click(object sender, EventArgs e) {
+            _model.copyToClipboardButton(hddTextBox.Text);
+        }
+
+        private void button7_Click(object sender, EventArgs e) {
+            _model.copyToClipboardButton(memTextBox.Text);
+        }
+
+        private void button8_Click(object sender, EventArgs e) {
+            _model.copyToClipboardButton(mbTextBox.Text);
+        }
     }
 }

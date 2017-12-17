@@ -27,6 +27,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mbTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.memTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.hddTextBox = new System.Windows.Forms.TextBox();
@@ -37,8 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cpuTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.mbTextBox = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +78,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button8);
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.mbTextBox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.memTextBox);
@@ -86,10 +98,27 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(170, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(483, 437);
+            this.groupBox1.Size = new System.Drawing.Size(527, 437);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Info";
+            // 
+            // mbTextBox
+            // 
+            this.mbTextBox.Location = new System.Drawing.Point(54, 166);
+            this.mbTextBox.Name = "mbTextBox";
+            this.mbTextBox.ReadOnly = true;
+            this.mbTextBox.Size = new System.Drawing.Size(423, 20);
+            this.mbTextBox.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "M/B";
             // 
             // memTextBox
             // 
@@ -161,7 +190,7 @@
             // 
             // cpuTextBox
             // 
-            this.cpuTextBox.Location = new System.Drawing.Point(54, 32);
+            this.cpuTextBox.Location = new System.Drawing.Point(54, 37);
             this.cpuTextBox.Name = "cpuTextBox";
             this.cpuTextBox.ReadOnly = true;
             this.cpuTextBox.Size = new System.Drawing.Size(423, 20);
@@ -170,34 +199,77 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 35);
+            this.label1.Location = new System.Drawing.Point(6, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "CPU";
             // 
-            // label6
+            // button3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 169);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Motherboard";
+            this.button3.Image = global::hwCORE.Properties.Resources.copy;
+            this.button3.Location = new System.Drawing.Point(483, 35);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 23);
+            this.button3.TabIndex = 12;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // mbTextBox
+            // button4
             // 
-            this.mbTextBox.Location = new System.Drawing.Point(82, 166);
-            this.mbTextBox.Name = "mbTextBox";
-            this.mbTextBox.ReadOnly = true;
-            this.mbTextBox.Size = new System.Drawing.Size(395, 20);
-            this.mbTextBox.TabIndex = 11;
+            this.button4.Image = global::hwCORE.Properties.Resources.copy;
+            this.button4.Location = new System.Drawing.Point(483, 61);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(30, 23);
+            this.button4.TabIndex = 13;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Image = global::hwCORE.Properties.Resources.copy;
+            this.button5.Location = new System.Drawing.Point(483, 87);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(30, 23);
+            this.button5.TabIndex = 14;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Image = global::hwCORE.Properties.Resources.copy;
+            this.button6.Location = new System.Drawing.Point(483, 112);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(30, 23);
+            this.button6.TabIndex = 15;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Image = global::hwCORE.Properties.Resources.copy;
+            this.button7.Location = new System.Drawing.Point(483, 138);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(30, 23);
+            this.button7.TabIndex = 16;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Image = global::hwCORE.Properties.Resources.copy;
+            this.button8.Location = new System.Drawing.Point(483, 164);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 23);
+            this.button8.TabIndex = 17;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 462);
+            this.ClientSize = new System.Drawing.Size(734, 462);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "MainView";
@@ -228,6 +300,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox mbTextBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
 
