@@ -59,8 +59,9 @@ namespace hwCORE.model {
             string hddDetails = String.Empty;
 
             var details = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive").Get();
+            
             foreach (var item in details) {
-                hddDetails = Convert.ToString(item["Caption"]);
+                hddDetails += Convert.ToString(item["Caption"]) + "; ";
                 //hddDetails += " " + Convert.ToString(item["Description"]);
             }
 
@@ -97,6 +98,20 @@ namespace hwCORE.model {
 
 
             
+        }
+
+        public string getMotherboardDetails() {
+
+            string mbDetails = String.Empty;
+
+            var details = new ManagementObjectSearcher("SELECT * FROM Win32_BaseBoard").Get();
+
+            foreach (var item in details) {
+                mbDetails = Convert.ToString(item["Manufacturer"]);
+                
+            }
+
+            return mbDetails;
         }
 
     }

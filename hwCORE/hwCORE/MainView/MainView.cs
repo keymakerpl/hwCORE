@@ -26,6 +26,7 @@ namespace hwCORE {
             gpuTextBox.Text = _model.getGpuDetails();
             hddTextBox.Text = _model.getHddDetails();
             memTextBox.Text = _model.getMemoryDetails();
+            mbTextBox.Text = _model.getMotherboardDetails();
 
         }
     }

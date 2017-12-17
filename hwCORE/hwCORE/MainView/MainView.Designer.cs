@@ -27,6 +27,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.memTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.hddTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.gpuTextBox = new System.Windows.Forms.TextBox();
@@ -35,8 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cpuTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.memTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.mbTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +72,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.mbTextBox);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.memTextBox);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.hddTextBox);
@@ -86,6 +90,23 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Info";
+            // 
+            // memTextBox
+            // 
+            this.memTextBox.Location = new System.Drawing.Point(54, 140);
+            this.memTextBox.Name = "memTextBox";
+            this.memTextBox.ReadOnly = true;
+            this.memTextBox.Size = new System.Drawing.Size(423, 20);
+            this.memTextBox.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Memory";
             // 
             // hddTextBox
             // 
@@ -155,22 +176,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CPU";
             // 
-            // label5
+            // label6
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 143);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Memory";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Motherboard";
             // 
-            // memTextBox
+            // mbTextBox
             // 
-            this.memTextBox.Location = new System.Drawing.Point(54, 140);
-            this.memTextBox.Name = "memTextBox";
-            this.memTextBox.ReadOnly = true;
-            this.memTextBox.Size = new System.Drawing.Size(423, 20);
-            this.memTextBox.TabIndex = 9;
+            this.mbTextBox.Location = new System.Drawing.Point(82, 166);
+            this.mbTextBox.Name = "mbTextBox";
+            this.mbTextBox.ReadOnly = true;
+            this.mbTextBox.Size = new System.Drawing.Size(395, 20);
+            this.mbTextBox.TabIndex = 11;
             // 
             // MainView
             // 
@@ -205,6 +226,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox memTextBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox mbTextBox;
+        private System.Windows.Forms.Label label6;
     }
 }
 
