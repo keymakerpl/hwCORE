@@ -70,19 +70,22 @@ namespace hwCORE.model {
 
         public string getMemoryDetails() {
 
-            string memDetails = String.Empty;
+            //string memDetails = String.Empty;
 
+            long mSize = 0;
+            long mCap = 0;
+            long mSizeInGB = 0;
             try {
 
-                var details = new ManagementObjectSearcher("SELECT * FROM Win32_LogicalMemoryConfiguration").Get();
+                var details = new ManagementObjectSearcher("SELECT * FROM Win32_PhysicalMemory").Get();
                 foreach (var item in details) {
-                    string result = Convert.ToString(item["TotalPhysicalMemory"]);
-
-                    memDetails = result;
+                    mCap = Convert.ToInt64(item["Capacity"]);
+                    mSize += mCap;    
                 }
-                
+                mSize = (mSize / 1024) / 1024;
+                mSizeInGB = mSize / 1024;
 
-                return memDetails;
+                return mSize.ToString() + " MB " + "("+mSizeInGB+ " GB)";
 
             }
             catch (ManagementException ex) {
